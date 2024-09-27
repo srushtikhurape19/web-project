@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Garden - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Secret Garden</div>
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#properties">PROPERTIES</a>
+                <a href="#location">LOCATION</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <main class="hero">
+            <p>Explore a wide range of properties </p>
+            <h1>Construction of houses and country complexes</h1>
+           
+        </main>
+        <p1>secreate garden anew gathering place in the centre of jonson<br>
+            street is coming to me this new hub is set to draw togeter</br>
+            some of bayton bays foremost 
+             artisams</p1>
+        <footer class="stats">
+            <div class="stat">
+                <div class="stat-number" id="houses-built">123+</div>
+                <div class="stat-label">Houses built in 2 years</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">45000</div>
+                <div class="stat-label">Square meters of individual repairs</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">35</div>
+                <div class="stat-label">Years of building</div>
+            </div>
+            
+           
+            <div class="cta">
+                <a href="projects">Projects</a>
+                <a href="communities">Communities</a>
+                <a href="quick-move-ins">Quick Move-Ins</a>
+                <a href="open-houses">Open Houses</a>
+                <a href="about">ABOUT</a>
+                <a href="Warinty">warinty</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Simple animation for the number of houses built
+        let count = 0;
+        const target = 123;
+        const duration = 2000; // 2 seconds
+        const step = 16; // Update every 16ms (60fps)
+        const increment = target / (duration / step);c
+
+        function updateCount() {
+            count += increment;
+            if (count < target) {
+                document.getElementById('houses-built').textContent = Math.round(count) + '+';
+                setTimeout(updateCount, step);
+            } else {
+                document.getElementById('houses-built').textContent = target + '+';
+            }
+        }
+
+        updateCount();
+    </script>
+</body>
+</html>

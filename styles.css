@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100%;
+}
+.container {
+    background-image: url('AdobeStock_661977351_Preview.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a8ff78;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.hero {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+p1{
+    text-align-last:right;
+}
+.hero h1 {
+    font-size: 64px;
+    margin: 0;
+    max-width: 800px;
+}
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+.stat {
+    text-align: center;
+}
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+}
+.stat-label {
+    font-size: 14px;
+}
+.cta {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cta a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.cta a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
